@@ -7,7 +7,6 @@ def nyc_pigeon_organizer(data)
         if organizedPigeons[name] == nil
           organizedPigeons[name] = {keys => [keys2.to_s]}
         elsif organizedPigeons[name][keys] == nil
-          #binding.pry
           organizedPigeons[name][keys] = [keys2.to_s]
         else
           organizedPigeons[name][keys] << keys2.to_s
